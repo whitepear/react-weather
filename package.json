@@ -20,5 +20,18 @@
   "bugs": {
     "url": "https://github.com/whitepear/react_weather/issues"
   },
-  "homepage": "https://github.com/whitepear/react_weather#readme"
+  "homepage": "https://github.com/whitepear/react_weather#readme",
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.11.1",
+    "html-webpack-plugin": "^2.22.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-router": "^2.6.1"
+  }
 }
