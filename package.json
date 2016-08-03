@@ -1,0 +1,24 @@
+{
+  "name": "open_weather",
+  "version": "1.0.0",
+  "description": "React.js project, serving OpenWeather API data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node app/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whitepear/react_weather.git"
+  },
+  "keywords": [
+    "react",
+    "openweather",
+    "javascript"
+  ],
+  "author": "whitepear",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whitepear/react_weather/issues"
+  },
+  "homepage": "https://github.com/whitepear/react_weather#readme"
+}
