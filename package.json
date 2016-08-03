@@ -4,7 +4,8 @@
   "description": "React.js project, serving OpenWeather API data.",
   "main": "index.js",
   "scripts": {
-    "test": "node app/index.js"
+    "production": "webpack -p",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
