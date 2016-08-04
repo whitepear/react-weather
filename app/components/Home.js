@@ -4,7 +4,7 @@ var PropTypes = React.PropTypes;
 function Home (props) {
 	var inputContainer = {
 		backgroundImage: 'url(./app/images/symphony.png)',
-		height: '90%',
+		height: '92%',
 		'textAlign': 'center'
 	};
 
