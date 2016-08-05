@@ -10,39 +10,39 @@ function Home (props) {
 
 	var inputHeader = {
 		margin: '0 auto',		
-		paddingTop: '300',
+		paddingTop: 300,
 		color: '#fff',
-		fontSize: '45',
-		marginBottom: '30',		
+		fontSize: 45,
+		marginBottom: 30,		
 		fontFamily: "'Lato', sans-serif"
 	};
 
 	var inputControls = {
 		width: '80%',
-		maxWidth: '350',
+		maxWidth: 350,
 		margin: '0 auto'
 	};
 
 	var submitButton = {
-		marginTop: '20',
+		marginTop: 20,
 		backgroundColor: '#079F75',
 		color: '#fff',
-		padding: '10'
+		padding: 10
 	};
 
 	return (
 		<div style={inputContainer}>
 			<h1 style={inputHeader}>Enter a City and State</h1>
 			<div style={inputControls}>
-				<input type="text" placeholder="St. George, Utah" className="form-control" />
-				<button className="btn" type="button" style={submitButton}>Get Weather</button>				
+				<input type="text" placeholder="St. George, Utah" className="form-control" /*onKeyUp={PUT SOMETHING IN HERE)}*/ />
+				<button className="btn" type="button" style={submitButton} onClick={props.onSubmit} >Get Weather</button>				
 			</div>
 		</div>
 	)	
 }
 
-// Home.propTypes = {
-
-// };
+Home.propTypes = {
+	onSubmit: PropTypes.func.isRequired
+};
 
 module.exports = Home;
