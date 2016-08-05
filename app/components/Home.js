@@ -12,7 +12,7 @@ function Home (props) {
 		margin: '0 auto',		
 		paddingTop: 300,
 		color: '#fff',
-		fontSize: 45,
+		fontSize: 55,
 		marginBottom: 30,		
 		fontFamily: "'Lato', sans-serif"
 	};
