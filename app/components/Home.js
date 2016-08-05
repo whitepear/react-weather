@@ -34,7 +34,7 @@ function Home (props) {
 		<div style={inputContainer}>
 			<h1 style={inputHeader}>Enter a City and State</h1>
 			<div style={inputControls}>
-				<input type="text" placeholder="St. George, Utah" className="form-control" /*onKeyUp={PUT SOMETHING IN HERE)}*/ />
+				<input type="text" placeholder="St. George, Utah" className="form-control" onChange={props.onUpdate} />
 				<button className="btn" type="button" style={submitButton} onClick={props.onSubmit} >Get Weather</button>				
 			</div>
 		</div>
@@ -42,6 +42,7 @@ function Home (props) {
 }
 
 Home.propTypes = {
+	onUpdate: PropTypes.func.isRequired,
 	onSubmit: PropTypes.func.isRequired
 };
 
