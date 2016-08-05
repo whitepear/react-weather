@@ -17,7 +17,12 @@ var HomeContainer = React.createClass({
 	},
 	handleSubmit: function (e) {
 		e.preventDefault();
-		console.log(this.state);
+		var location = this.state.location; // cache state
+		this.setState({
+			location: ''
+		}); // reset state
+		console.log(location); // DELETE ME IF READY
+		this.context.router.push('/forecast/' + location);
 	},
 	render: function () {
 		return (
