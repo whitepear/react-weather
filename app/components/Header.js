@@ -1,5 +1,6 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
+var Link = require('react-router').Link;
 
 function Header (props) {
 	
@@ -43,7 +44,9 @@ function Header (props) {
 
 	return (
 		<div style={mainNav}>
-			<h2 style={navLogo}>OpenWeather</h2>				
+			<Link to="/">
+				<h2 style={navLogo}>OpenWeather</h2>				
+			</Link>
 			<button type="button" className="btn hidden-xs" style={headerButton} onClick={props.onSubmit}>Get Weather</button>
 			<input type="text" className="hidden-xs" placeholder="St. George, Utah" style={textInput} onChange={props.onUpdate} />
 		</div>
