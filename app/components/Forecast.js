@@ -1,4 +1,5 @@
 var React = require('react');
+var Link = require('react-router').Link;
 var PropTypes = React.PropTypes;
 var getDate = require('../utils/getDate.js');
 var key = 0;
@@ -37,7 +38,7 @@ function Forecast (props) {
 
 	var dateText = {
 		position: 'relative',
-		bottom: 30,
+		bottom: 20,
 		fontSize: 30
 	};
 	
@@ -55,8 +56,17 @@ function Forecast (props) {
 				<div className="row">					
 					{props.weatherForecast.list.map(function (day, index) {						
 						var statusCode = day.weather[0].id;
+
 						return <div key={uniqueKey()} className="col-xs-12 col-sm-4 col-md-3 text-center" style={colStyle}>
-									   <i className={'owf ' + 'owf-' + statusCode} style={iBigger}></i>
+										 <Link to={{
+									 	    pathname: '/detail/:location',
+										    state: {
+									 		    id: index,
+											    forecast: props.weatherForecast
+										    }									  	
+										 }}>
+									   	 <i className={'owf ' + 'owf-' + statusCode} style={iBigger}></i>
+									   </Link>
 									   <div style={dateText}>{getDate(index)}</div>
 									 </div>	
 					})}					
