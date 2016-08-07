@@ -31,9 +31,10 @@ function Forecast (props) {
 		marginTop: 30
 	};
 
-	var iBigger = {
+	var iStyling = {
 		fontSize: 205,
-		cursor: 'pointer'		
+		cursor: 'pointer',
+		color: '#333'		
 	};
 
 	var dateText = {
@@ -65,7 +66,7 @@ function Forecast (props) {
 											    forecast: props.weatherForecast
 										    }									  	
 										 }}>
-									   	 <i className={'owf ' + 'owf-' + statusCode} style={iBigger}></i>
+									   	 <i className={'owf ' + 'owf-' + statusCode} style={iStyling}></i>
 									   </Link>
 									   <div style={dateText}>{getDate(index)}</div>
 									 </div>	
