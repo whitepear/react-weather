@@ -59,7 +59,7 @@ function Forecast (props) {
 
 						return <div key={uniqueKey()} className="col-xs-12 col-sm-4 col-md-3 text-center" style={colStyle}>
 										 <Link to={{
-									 	    pathname: '/detail/:location',
+									 	    pathname: '/detail',
 										    state: {
 									 		    id: index,
 											    forecast: props.weatherForecast
