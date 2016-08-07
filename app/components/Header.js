@@ -48,7 +48,7 @@ function Header (props) {
 				<h2 style={navLogo}>OpenWeather</h2>				
 			</Link>
 			<button type="button" className="btn hidden-xs" style={headerButton} onClick={props.onSubmit}>Get Weather</button>
-			<input type="text" className="hidden-xs" placeholder="St. George, Utah" style={textInput} onChange={props.onUpdate} />
+			<input type="text" className="hidden-xs" placeholder="Dublin, Ireland" style={textInput} onChange={props.onUpdate} />
 		</div>
 	)
 }
