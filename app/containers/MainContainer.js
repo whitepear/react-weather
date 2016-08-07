@@ -21,7 +21,7 @@ var MainContainer = React.createClass({
 		this.setState({
 			location: ''
 		}); // reset state
-		console.log(location); // DELETE ME IF READY
+		console.log('MainContainer location value is: ' + location); // DELETE ME IF READY
 		this.context.router.push('/forecast/' + location);
 	},
 	render: function () {
