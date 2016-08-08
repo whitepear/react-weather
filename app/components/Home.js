@@ -9,8 +9,7 @@ function Home (props) {
 	};
 
 	var inputHeader = {
-		margin: '0 auto',		
-		paddingTop: 300,
+		margin: '0 auto',				
 		color: '#fff',
 		fontSize: 55,
 		marginBottom: 30,		
@@ -32,7 +31,7 @@ function Home (props) {
 
 	return (
 		<div style={inputContainer}>
-			<h1 style={inputHeader}>Enter a Location and Country</h1>
+			<h1 style={inputHeader} id="homeHeader">Enter a Location and Country</h1>
 			<div style={inputControls}>
 				<input type="text" placeholder="Dublin, Ireland" className="form-control" onChange={props.onUpdate} />
 				<button className="btn" type="button" style={submitButton} onClick={props.onSubmit} >Get Weather</button>				
