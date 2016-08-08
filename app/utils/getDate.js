@@ -1,5 +1,5 @@
 function getDate (index) {
-	// INCLUDE ABILITY TO HANDLE TRANSITION TO NEW MONTHS ON LATER INDEXES
+	
 	var currentDate = new Date();
 	var date;
 	var weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
