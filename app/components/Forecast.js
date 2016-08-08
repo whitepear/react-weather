@@ -16,6 +16,11 @@ function Forecast (props) {
 		fontFamily: "'Lato', sans-serif"
 	};
 
+	var errorMessage = {
+		fontSize: 50,
+		marginTop: 40
+	};
+
 	var locationHeader = {		
 		marginTop: 30,
 		fontSize: 80
@@ -46,6 +51,14 @@ function Forecast (props) {
 	if (props.isLoading) {
 		return (
 			<div>Loading.</div>
+		)
+	} else if (props.weatherForecast.cod === '404') {
+		return (
+			<div className="container text-center" style={font}>
+				<div style={errorMessage}>
+					An error occurred. Please check that your input is correct.
+				</div>
+			</div>
 		)
 	} else {
 		return (
