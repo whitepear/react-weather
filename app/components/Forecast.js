@@ -51,7 +51,7 @@ function Forecast (props) {
 		return (
 			<div className="container" style={font}>
 				<div className="row text-center">
-					<div className="col-xs-12" style={locationHeader}>{props.location}</div>
+					<div className="col-xs-12" style={locationHeader}>{props.weatherForecast.city.name + ', ' + props.weatherForecast.city.country}</div>
 					<div className="col-xs-12" style={subHeader}>Select a day</div>					
 				</div>
 				<div className="row">					
