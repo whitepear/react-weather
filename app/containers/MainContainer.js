@@ -17,6 +17,7 @@ var MainContainer = React.createClass({
 	},
 	handleSubmit: function (e) {
 		e.preventDefault();
+		document.getElementById('headerInput').value = '';
 		var location = this.state.location; // cache state
 		this.setState({
 			location: ''
