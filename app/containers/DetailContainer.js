@@ -1,10 +1,12 @@
 var React = require('react');
+var Detail = require('../components/Detail.js');
 
 var DetailContainer = React.createClass({
 	render: function () {
+		console.log(this.props);
 		return (
-			<div>Detail container!</div>
-		)
+			<Detail id={this.props.location.state.id} forecast={this.props.location.state.forecast} />
+		);
 	}
 });
 
