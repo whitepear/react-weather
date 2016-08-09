@@ -7,8 +7,7 @@ var key = 0;
 function Forecast (props) {
 	
 	function uniqueKey () {
-		key++;
-		console.log(key);
+		key++;		
 		return key;
 	}
 

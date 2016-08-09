@@ -21,9 +21,13 @@ var MainContainer = React.createClass({
 		var location = this.state.location; // cache state
 		this.setState({
 			location: ''
-		}); // reset state
-		console.log('MainContainer location value is: ' + location); // DELETE ME IF READY
+		}); // reset state		
 		this.context.router.push('/forecast/' + location);
+	},
+	handleEnter: function (e) {
+		if (e.charCode === 13) {
+			this.handleSubmit(e);
+		}
 	},
 	render: function () {
 		var mainStyles = {
@@ -32,7 +36,7 @@ var MainContainer = React.createClass({
 		
 		return (
 			<div style={mainStyles}>
-				<Header onUpdate={this.handleUpdate} onSubmit={this.handleSubmit} />
+				<Header onUpdate={this.handleUpdate} onSubmit={this.handleSubmit} onEnter={this.handleEnter} />
 				{this.props.children}
 			</div>
 		)

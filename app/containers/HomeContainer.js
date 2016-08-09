@@ -20,13 +20,17 @@ var HomeContainer = React.createClass({
 		var location = this.state.location; // cache state
 		this.setState({
 			location: ''
-		}); // reset state
-		console.log(location); // DELETE ME IF READY
+		}); // reset state		
 		this.context.router.push('/forecast/' + location);
+	},
+	handleEnter: function (e) {
+		if (e.charCode === 13) {
+			this.handleSubmit(e);
+		}
 	},
 	render: function () {
 		return (
-			<Home onSubmit={this.handleSubmit} onUpdate={this.handleUpdate} />
+			<Home onSubmit={this.handleSubmit} onUpdate={this.handleUpdate} onEnter={this.handleEnter} />
 		)
 	}
 });

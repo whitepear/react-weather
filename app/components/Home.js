@@ -33,7 +33,7 @@ function Home (props) {
 		<div style={inputContainer}>
 			<h1 style={inputHeader} id="homeHeader">Enter a Location and Country</h1>
 			<div style={inputControls}>
-				<input type="text" placeholder="Dublin, Ireland" className="form-control" onChange={props.onUpdate} />
+				<input type="text" placeholder="Dublin, Ireland" className="form-control" onChange={props.onUpdate} onKeyPress={props.onEnter} />
 				<button className="btn" type="button" style={submitButton} onClick={props.onSubmit} >Get Weather</button>				
 			</div>
 		</div>
