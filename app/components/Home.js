@@ -42,6 +42,7 @@ function Home (props) {
 
 Home.propTypes = {
 	onUpdate: PropTypes.func.isRequired,
+	onEnter: PropTypes.func.isRequired,
 	onSubmit: PropTypes.func.isRequired
 };
 

@@ -55,6 +55,7 @@ function Header (props) {
 
 Header.propTypes = {
 	onUpdate: PropTypes.func.isRequired,
+	onEnter: PropTypes.func.isRequired,
 	onSubmit: PropTypes.func.isRequired
 }
 
