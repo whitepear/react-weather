@@ -1,5 +1,7 @@
 var React = require('react');
 var Header = require('../components/Header.js');
+var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
+require('../styles/transition.css');
 
 var MainContainer = React.createClass({
 	contextTypes: {
@@ -37,7 +39,12 @@ var MainContainer = React.createClass({
 		return (
 			<div style={mainStyles}>
 				<Header onUpdate={this.handleUpdate} onSubmit={this.handleSubmit} onEnter={this.handleEnter} />
-				{this.props.children}
+				<ReactCSSTransitionGroup
+					transitionName="appear"
+					transitionEnterTimeout={500}
+					transitionLeaveTimeout={500}>
+					{React.cloneElement(this.props.children, {key: this.props.location.pathname})}
+				</ReactCSSTransitionGroup>				
 			</div>
 		)
 	}
