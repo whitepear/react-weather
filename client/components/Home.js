@@ -3,7 +3,7 @@ var PropTypes = React.PropTypes;
 
 function Home (props) {
 	var inputContainer = {
-		backgroundImage: 'url(/app/styles/images/wild_sea_edit_web.jpg)',
+		backgroundImage: 'url(../styles/images/wild_sea_edit_web.jpg)',
 		height: '92%',
 		'textAlign': 'center'
 	};
