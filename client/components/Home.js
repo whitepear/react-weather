@@ -1,40 +1,13 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
 
-function Home (props) {
-	var inputContainer = {
-		backgroundImage: 'url(../styles/images/wild_sea_edit_web.jpg)',
-		height: '92%',
-		'textAlign': 'center'
-	};
-
-	var inputHeader = {
-		margin: '0 auto',				
-		color: '#fff',
-		fontSize: 55,
-		marginBottom: 30,		
-		fontFamily: "'Lato', sans-serif"
-	};
-
-	var inputControls = {
-		width: '80%',
-		maxWidth: 350,
-		margin: '0 auto'
-	};
-
-	var submitButton = {
-		marginTop: 20,
-		backgroundColor: '#079F75',
-		color: '#fff',
-		padding: 10
-	};
-
+function Home(props) {
 	return (
-		<div style={inputContainer}>
-			<h1 style={inputHeader} id="homeHeader">Enter a Location and Country</h1>
-			<div style={inputControls}>
+		<div className="input-container">
+			<h1 className="input-header" id="homeHeader">Enter a Location and Country</h1>
+			<div className="input-controls">
 				<input type="text" placeholder="Dublin, Ireland" className="form-control" onChange={props.onUpdate} onKeyPress={props.onEnter} />
-				<button className="btn" type="button" style={submitButton} onClick={props.onSubmit} >Get Weather</button>				
+				<button className="btn submit-button" type="button" onClick={props.onSubmit} >Get Weather</button>				
 			</div>
 		</div>
 	)	

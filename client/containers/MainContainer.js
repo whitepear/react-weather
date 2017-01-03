@@ -1,7 +1,7 @@
 var React = require('react');
 var Header = require('../components/Header.js');
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
-require('../styles/transition.css');
+require('../styles/styles.scss');
 
 var MainContainer = React.createClass({
 	contextTypes: {

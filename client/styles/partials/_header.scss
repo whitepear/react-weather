@@ -1,0 +1,36 @@
+.main-nav {
+	height: 8%;			
+	min-height: 67px;
+	background: linear-gradient(#FC833F, #F35E0A);	
+}
+
+.nav-logo {
+	margin: 0;
+	display: inline-block;
+	color: #fff;
+	margin-left: 20px;
+	position: relative;
+	top: 20px;						
+}
+
+.text-input {
+	position: relative;
+	top: 20px;
+	float: right;
+	margin-right: 10px;
+	height: 34px;
+	border-radius: 3px;
+	border: none;
+	padding: 5px;
+	padding-left: 10px;
+	width: 220px;
+}
+
+.header-button {
+	background-color: #079F75;
+	color: #fff;
+	position: relative;
+	top: 20px;
+	float: right;
+	margin-right: 15px;
+}

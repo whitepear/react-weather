@@ -23,12 +23,17 @@
   },
   "homepage": "https://github.com/whitepear/react_weather#readme",
   "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.11.4",
     "babel-loader": "^6.2.4",
     "babel-preset-react": "^6.11.1",
     "css-loader": "^0.23.1",
+    "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^4.1.1",
+    "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
