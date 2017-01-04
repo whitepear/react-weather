@@ -11,24 +11,24 @@ var ForecastContainer = React.createClass({
     }
   },
   componentDidMount: function () {    
-    fetchWeather.fiveDay(this.props.routeParams.location)
-    .then(function (weather) {    	
-    	this.setState({
-        location: this.props.routeParams.location,
-    		isLoading: false,
-    		weatherForecast: weather
-    	});    	
-    }.bind(this));
+    fetchWeather(this.props.routeParams.location,
+      function(weather) { 	
+      	this.setState({
+          location: this.props.routeParams.location,
+      		isLoading: false,
+      		weatherForecast: weather
+      	});    	
+      }.bind(this));
   },
   componentWillReceiveProps: function (newProps) {    
-    fetchWeather.fiveDay(newProps.params.location)
-    .then(function (weather) {    	
-    	this.setState({
-        location: newProps.params.location,
-    		isLoading: false,
-    		weatherForecast: weather
-    	});    	
-    }.bind(this));
+    fetchWeather(newProps.params.location,
+      function(weather) {    	
+      	this.setState({
+          location: newProps.params.location,
+      		isLoading: false,
+      		weatherForecast: weather
+      	});    	
+      }.bind(this));
   },
 	render: function () {
 		return (
