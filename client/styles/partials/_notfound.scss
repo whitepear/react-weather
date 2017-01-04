@@ -1,0 +1,22 @@
+.notfound-status {
+	font-size: 104px;
+	margin-top: 50px;
+}
+
+.notfound-sub-status {
+	font-size: 42px;	
+}
+
+
+// MEDIA QUERIES
+
+// Extra Small Styles
+@media (max-width: 767px) {
+	.notfound-status {
+		font-size: 84px;
+	}
+
+	.notfound-sub-status {
+		font-size: 34px;		
+	}
+}
