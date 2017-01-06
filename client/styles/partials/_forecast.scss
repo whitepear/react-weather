@@ -39,3 +39,26 @@
 	bottom: 20px;
 	font-size: 30px;
 }
+
+
+// MEDIA QUERIES
+
+// Extra Small Styles
+@media (max-width: 767px) {
+	.loading-message {
+		margin-top: 30px;
+	}
+
+	.location-header {
+		font-size: 40px;
+	}
+
+	.sub-header {
+		font-size: 30px;
+		margin-bottom: 0px;
+	}
+
+	.i-styling {
+		font-size: 155px;
+	}
+}

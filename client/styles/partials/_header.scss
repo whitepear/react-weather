@@ -35,3 +35,14 @@
 	float: right;
 	margin-right: 15px;
 }
+
+
+// MEDIA QUERIES
+
+// Extra Small Styles
+@media (max-width: 767px) {
+	.main-nav a {
+		display: inline-block;
+		height: 100%;
+	}
+}

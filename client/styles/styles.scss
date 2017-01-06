@@ -20,3 +20,13 @@ body {
 input {
 	font-family: Helvetica;
 }
+
+
+// MEDIA QUERIES
+
+// Extra Small Styles
+@media (max-width: 767px) {
+	.container {
+		margin-bottom: 50px;
+	}
+}

@@ -1,7 +1,3 @@
-#homeHeader {
-	padding-top: 300px;
-}
-
 .input-container {
 	background-image: url(images/wild_sea_edit_web.jpg);
 	height: 92%;
@@ -9,7 +5,8 @@
 }
 
 .input-header {
-	margin: 0 auto;				
+	margin: 0 auto;	
+	padding-top: 300px;			
 	color: #fff;
 	font-size: 55px;
 	margin-bottom: 30px;		
@@ -30,5 +27,17 @@
 
 	&:hover {
 		color: #eee;
+	}
+}
+
+
+// MEDIA QUERIES
+
+// Extra Small Styles
+@media (max-width: 767px) {
+	.input-header {
+		padding: 50px 15px 0 15px;
+		margin-bottom: 65px;
+		font-size: 45px;
 	}
 }

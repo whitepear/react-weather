@@ -1,4 +1,4 @@
-.location-header {		
+.detail-location-header {		
 	margin-top: 30px;
 	font-size: 80px;
 }
@@ -17,3 +17,23 @@
 .description-text {
 	font-size: 35px;
 }	
+
+
+// MEDIA QUERIES
+
+// Extra Small Styles
+@media (max-width: 767px) {
+	.detail-location-header {
+		font-size: 40px;
+		margin-top: 20px;
+		margin-bottom: 5px;
+	}
+
+	.i-detail {
+		font-size: 180px;
+	}
+
+	.description-text {
+		font-size: 28px;
+	}
+}
