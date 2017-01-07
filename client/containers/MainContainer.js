@@ -1,7 +1,7 @@
 var React = require('react');
 var Header = require('../components/Header.js');
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
-require('../styles/styles.scss');
+var homeBackground = require('../styles/images/wild_sea_edit_web.jpg');
 
 var MainContainer = React.createClass({
 	contextTypes: {
@@ -10,6 +10,20 @@ var MainContainer = React.createClass({
 	getInitialState: function () {
 		return {
 			location: ''
+		}
+	},
+	componentDidMount: function() {
+		if (this.props.location.pathname === '/') {
+			document.body.style.background = 'url(' + homeBackground +')';
+		} else {
+			document.body.style.background = '#fff';
+		}
+	},
+	componentWillUpdate: function(nextProps) {
+		if (nextProps.location.pathname === '/') {
+			document.body.style.background = 'url(' + homeBackground +')';
+		} else {
+			document.body.style.background = '#fff';
 		}
 	},
 	handleUpdate: function (e) {
